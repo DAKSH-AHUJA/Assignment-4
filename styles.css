@@ -1,0 +1,324 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fb;
+  color: #1f2933;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.container {
+  width: 92%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #d7dde5;
+  position: sticky;
+  top: 0;
+}
+
+.header-row {
+  padding: 16px 0;
+}
+
+.header-row h1,
+.header-row p {
+  margin: 0;
+}
+
+.tagline,
+.section-text,
+.panel-note,
+.empty-text,
+.site-footer p,
+.site-footer a,
+.cart-head p {
+  color: #5b6670;
+}
+
+.menu-btn,
+.main-btn,
+.small-btn {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.menu-btn {
+  margin-top: 14px;
+  padding: 10px 14px;
+  background-color: #1d70b8;
+  color: #ffffff;
+}
+
+.nav-links {
+  display: none;
+  margin-top: 14px;
+}
+
+.nav-links a {
+  display: block;
+  padding: 8px 0;
+  font-weight: bold;
+}
+
+.nav-links.show {
+  display: block;
+}
+
+.hero {
+  padding: 40px 0;
+  background-color: #e7f1fb;
+}
+
+.small-title {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #1d70b8;
+}
+
+.hero h2 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+.hero p {
+  line-height: 1.6;
+}
+
+.hero-card,
+.info-box,
+.panel,
+.newsletter-panel {
+  background-color: #ffffff;
+  border: 1px solid #d7dde5;
+  border-radius: 10px;
+}
+
+.hero-card {
+  margin-top: 20px;
+  padding: 16px;
+}
+
+.main-btn {
+  padding: 12px 18px;
+  background-color: #ef6c3f;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.small-btn {
+  padding: 9px 12px;
+  font-weight: bold;
+}
+
+.add-btn {
+  background-color: #1d70b8;
+  color: #ffffff;
+}
+
+.remove-btn {
+  background-color: #e8edf3;
+  color: #1f2933;
+}
+
+.stats,
+.section-space {
+  padding: 28px 0 40px;
+}
+
+.info-box,
+.panel,
+.newsletter-panel {
+  padding: 16px;
+}
+
+.info-box {
+  margin-bottom: 14px;
+}
+
+.info-box h3 {
+  margin-top: 0;
+  color: #1d70b8;
+}
+
+.service-card {
+  border: 1px solid #d7dde5;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 14px;
+  background-color: #fafcff;
+}
+
+.service-card h3,
+.cart-entry h4 {
+  margin: 0 0 8px;
+}
+
+.service-card p,
+.cart-entry p {
+  margin: 0 0 10px;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.booking-grid > div:last-child,
+.form-panel {
+  margin-top: 18px;
+}
+
+.cart-head,
+.cart-entry {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cart-items {
+  margin: 14px 0;
+}
+
+.cart-entry {
+  padding: 10px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.cart-total {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c6d0da;
+  border-radius: 6px;
+}
+
+.error {
+  min-height: 18px;
+  margin: 4px 0 0;
+  color: #c62828;
+  font-size: 14px;
+}
+
+.message {
+  min-height: 20px;
+  margin-top: 14px;
+  font-weight: bold;
+  color: #17663a;
+}
+
+.alt-section {
+  background-color: #eef3f7;
+}
+
+.newsletter-panel form {
+  margin-top: 16px;
+}
+
+.site-footer {
+  padding: 30px 0;
+  background-color: #162534;
+  color: #ffffff;
+}
+
+.site-footer a {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* I kept only two media queries to make the layout easier to follow */
+@media (min-width: 768px) {
+  .header-row,
+  .hero-grid,
+  .booking-grid,
+  .stats-grid,
+  .about-grid,
+  .newsletter-panel,
+  .footer-grid {
+    display: grid;
+    gap: 18px;
+  }
+
+  .header-row {
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 18px;
+    margin-top: 0;
+  }
+
+  .hero-grid,
+  .booking-grid,
+  .newsletter-panel {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-grid,
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-card,
+  .booking-grid > div:last-child {
+    margin-top: 0;
+  }
+
+  .info-box {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero h2 {
+    font-size: 42px;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

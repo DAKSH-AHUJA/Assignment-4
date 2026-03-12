@@ -17,11 +17,11 @@ const services = [
 ];
 
 const emailConfig = {
-  publicKey: "YOUR_PUBLIC_KEY",
-  serviceId: "YOUR_SERVICE_ID",
-  bookingTemplateId: "YOUR_BOOKING_TEMPLATE_ID",
-  newsletterTemplateId: "YOUR_NEWSLETTER_TEMPLATE_ID",
-  ownerEmail: "your-company-email@example.com",
+  publicKey: "wcVWJLA26qY4M_AFh",
+  serviceId: "service_k25qsay",
+  bookingTemplateId: "template_7b8cv16",
+  newsletterTemplateId: "template_623w3b8",
+  ownerEmail: "quickwashcompany001@gmail.com",
 };
 
 let cart = [];
